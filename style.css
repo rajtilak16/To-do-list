@@ -1,42 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to top left,#e43535,#e1d20566);
+    font-family: 'Fredoka One', cursive;
+    background-image: linear-gradient(to right, #d4ab8f, #96daed);
+    color: #fff;
+  }
+
+.container{
+    width: 1280px;
+    margin: auto;
 }
+  
+#header h2{font-size: 2rem;}
  
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 20px;
+}
+  
+
 .header_container{
   margin: auto;
   text-align: center;
   width: 100%;
-  height: 100vh;
-  border: 3px solid green;
+  height: auto;
+   
   padding: 10px;
 }
 
 .user_input{
     padding: 50px;
     width: 100%;
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
 
-.input{
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 5px;
+#input{
+    background-color: rgb(212, 200, 188);
 }
+.user_input input{
+    width: 75%;
+    outline: none;
+    color: black;
+    
+    padding: 12px;
+    border: none;
+    
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+  }
+ 
 .button{
     padding: 5px;
     height: 40px;
     width: 60px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+     
 }
 
-.button:hover{
-    background-color: rgb(25, 26, 39);
-    color: white;
+.button{
+    background-color: #c8d0d2;
+    border: none;
 }
+.button:hover{
+    background-color: rgb(85, 83, 67);
+    color: rgb(255, 252, 252);
+}
+.to_do_items{
+    margin: auto;
+    padding: 10px;
+}
+.items{
+    background-color: rgb(104, 101, 86);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+ 
+.items:hover{
+    box-shadow: 0 0 20px #ffffffff;
+    border: 2px solid red;
+}
+
+  
+.items i{
+    cursor: pointer;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+

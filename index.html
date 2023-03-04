@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do-List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="header_container">
-            <h2>To-Do List</h2>
+            <h2><i class="fa-solid fa-square-check"></i>To-Do List</h2>
             <p>Be Productive</p>
+        
             <div class="user_input">
-                <input class="input" type="text" placeholder="Enter your task here"><button class="button" onclick="additem()">Submit</button>
+                <input id="input" type="text" placeholder="Enter your task here"><button class="button" onclick="additem()">Submit</button>
+            
             </div>
         </div>
-        
     </div>
+    <div class="container">
+        <div class="to_do_items"> 
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

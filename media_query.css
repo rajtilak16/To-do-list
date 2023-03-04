@@ -1,0 +1,37 @@
+@media(max-width:1280px){
+    .container{width: 100%;}
+  }
+  
+  @media(max-width:768px){
+    .container{width: 95%;}
+    
+    .user_input{
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    .user_input input{
+      width: 80%;
+    }
+    #header{
+      padding: 20px;
+      gap: 10px;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    #header h2{margin: 10px 0;}
+  
+    .user_input{width: 100%;}
+  
+    #to_do_list{width: 100%;}
+  }
+  
+  @media(max-width:480px){
+    .user_input input{width: 74%;}
+  }
+  
+  @media(max-width:320px){
+    .user_input input{width: 60%;}
+  }
